@@ -1,43 +1,53 @@
+# Generated datasets / local data
 datasets/*
+*.jsonl
+domainrag_text_corpus.jsonl
+test_sample.jsonl
+
+# Generated indexes / retrieval artefacts
 indexes/*
+*.mmap
+*.faiss
+*.npy
+*.pkl
+
+# Local models / checkpoints
 models/*
-results/*
-tests/*
-webui_configs/*
-
-!.gitkeep
-
-**/.history
-*.pyc
-*.egg-info
-build/
-.idea/
-dist/*
-upload_pypi.sh
-=0.4.1
-# Python virtual environment
-.venv/
-venv/
-env/
-
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Environment variables
-.env
-
-# Large / generated files
-datasets/
-indexes/
-results/
-outputs/
 *.pt
 *.bin
 *.safetensors
 *.onnx
 
-# VS Code
+# Results / outputs
+results/*
+outputs/*
+webui_configs/*
+
+# Keep placeholder files
+!.gitkeep
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache / build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info
+build/
+dist/*
+
+# Environment variables
+.env
+
+# IDE / editor files
 .vscode/
+.idea/
+**/.history
+
+# Project-specific / release files
+upload_pypi.sh
+=0.4.1
