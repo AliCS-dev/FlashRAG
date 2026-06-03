@@ -57,7 +57,7 @@ def create_evaluate(engine: "Engine") -> Dict[str, "Component"]:
             
             with gr.Column(scale = 1):
                 with gr.Row(variant = 'panel'):
-                    evaluate_output_box = gr.Markdown(show_copy_button=True)
+                    evaluate_output_box = gr.Markdown()
                 with gr.Row():
                     evaluate_preview_btn = gr.Button(
                         value = None,
@@ -78,7 +78,6 @@ def create_evaluate(engine: "Engine") -> Dict[str, "Component"]:
         with gr.Row(variant = 'panel'):
             terminal = gr.Markdown(
                 height = 500,
-                show_copy_button=True,
                 show_label = True,
                 container = True
             )
