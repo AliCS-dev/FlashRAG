@@ -15,3 +15,29 @@ build/
 dist/*
 upload_pypi.sh
 =0.4.1
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# Large / generated files
+datasets/
+indexes/
+results/
+outputs/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# VS Code
+.vscode/
