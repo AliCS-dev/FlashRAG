@@ -10,10 +10,10 @@ parser.add_argument("--retriever_path", type=str)
 args = parser.parse_args()
 
 config_dict = {
-    "data_dir": "datasets/",
+    "data_dir": "internship_work/datasets/",
     "dataset_name" : "my_tests",
     "index_path": "indexes/e5_my_test/e5_Flat.index",
-    "corpus_path": "indexes/my_test_corpu.jsonl",
+    "corpus_path": "internship_work/datasets/my_tests/my_test_corpu.jsonl",
     "model2path": {"e5": args.retriever_path, "llama3-8B-instruct": args.model_path},
     "generator_model": "llama3-8B-instruct",
     "retrieval_method": "e5",

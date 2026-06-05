@@ -1,0 +1,14 @@
+# Copy or override only the settings needed for this experiment.
+
+data_dir: "internship_work/datasets/"
+dataset_name: ""
+split: ["test"]
+
+retrieval_method: "e5"
+retrieval_model_path: "intfloat/e5-base-v2"
+index_path: ""
+corpus_path: ""
+retrieval_topk: 3
+
+save_intermediate_data: true
+save_note: ""

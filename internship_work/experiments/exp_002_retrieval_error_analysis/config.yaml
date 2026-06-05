@@ -1,0 +1,26 @@
+data_dir: "internship_work/datasets/"
+dataset_name: "my_tests"
+split: ["test"]
+
+retrieval_method: "e5"
+retrieval_model_path: "intfloat/e5-base-v2"
+index_path: "indexes/e5_my_test/e5_Flat.index"
+corpus_path: "internship_work/datasets/my_tests/my_test_corpu.jsonl"
+retrieval_topk: 3
+retrieval_batch_size: 256
+retrieval_use_fp16: true
+retrieval_query_max_length: 128
+retrieval_pooling_method: "mean"
+save_retrieval_cache: false
+use_retrieval_cache: false
+
+save_intermediate_data: false
+disable_save: true
+metrics: ["retrieval_recall", "retrieval_precision"]
+metric_setting:
+  retrieval_recall_topk: 3
+
+model2path:
+  e5: "intfloat/e5-base-v2"
+  llama3-8B-instruct: "models/llama3-8b-instruct"
+generator_model: "llama3-8B-instruct"
