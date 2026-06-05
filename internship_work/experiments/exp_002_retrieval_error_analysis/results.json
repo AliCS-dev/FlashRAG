@@ -1,0 +1,104 @@
+[
+  {
+    "id": "test0",
+    "question": "What is Machine Learning?",
+    "golden_answers": [
+      "Machine Learning refers to computer systems that learn patterns from data"
+    ],
+    "expected_doc_id": 0,
+    "expected_rank": 1,
+    "answer_string_found": true,
+    "case_type": "expected_doc_rank_1",
+    "retrieved_docs": [
+      {
+        "rank": 1,
+        "id": 0,
+        "title": "Machine Learning",
+        "answer_string_found": true,
+        "contents": "Machine Learning refers to computer systems that learn patterns from data and improve performance on tasks without being explicitly programmed for every rule."
+      },
+      {
+        "rank": 2,
+        "id": 2,
+        "title": "FAISS",
+        "answer_string_found": false,
+        "contents": "FAISS is used for efficient similarity search over vector embeddings. It is commonly used in retrieval systems to search similar vectors quickly."
+      },
+      {
+        "rank": 3,
+        "id": 1,
+        "title": "Retrieval Augmented Generation",
+        "answer_string_found": false,
+        "contents": "Retrieval Augmented Generation, also called RAG, combines document retrieval with text generation. It retrieves relevant documents and uses them to generate an answer."
+      }
+    ]
+  },
+  {
+    "id": "test1",
+    "question": "What is RAG?",
+    "golden_answers": [
+      "Retrieval Augmented Generation, also called RAG"
+    ],
+    "expected_doc_id": 1,
+    "expected_rank": 1,
+    "answer_string_found": true,
+    "case_type": "expected_doc_rank_1",
+    "retrieved_docs": [
+      {
+        "rank": 1,
+        "id": 1,
+        "title": "Retrieval Augmented Generation",
+        "answer_string_found": true,
+        "contents": "Retrieval Augmented Generation, also called RAG, combines document retrieval with text generation. It retrieves relevant documents and uses them to generate an answer."
+      },
+      {
+        "rank": 2,
+        "id": 2,
+        "title": "FAISS",
+        "answer_string_found": false,
+        "contents": "FAISS is used for efficient similarity search over vector embeddings. It is commonly used in retrieval systems to search similar vectors quickly."
+      },
+      {
+        "rank": 3,
+        "id": 0,
+        "title": "Machine Learning",
+        "answer_string_found": false,
+        "contents": "Machine Learning refers to computer systems that learn patterns from data and improve performance on tasks without being explicitly programmed for every rule."
+      }
+    ]
+  },
+  {
+    "id": "test2",
+    "question": "What is FAISS used for?",
+    "golden_answers": [
+      "FAISS is used for efficient similarity search"
+    ],
+    "expected_doc_id": 2,
+    "expected_rank": 1,
+    "answer_string_found": true,
+    "case_type": "expected_doc_rank_1",
+    "retrieved_docs": [
+      {
+        "rank": 1,
+        "id": 2,
+        "title": "FAISS",
+        "answer_string_found": true,
+        "contents": "FAISS is used for efficient similarity search over vector embeddings. It is commonly used in retrieval systems to search similar vectors quickly."
+      },
+      {
+        "rank": 2,
+        "id": 1,
+        "title": "Retrieval Augmented Generation",
+        "answer_string_found": false,
+        "contents": "Retrieval Augmented Generation, also called RAG, combines document retrieval with text generation. It retrieves relevant documents and uses them to generate an answer."
+      },
+      {
+        "rank": 3,
+        "id": 0,
+        "title": "Machine Learning",
+        "answer_string_found": false,
+        "contents": "Machine Learning refers to computer systems that learn patterns from data and improve performance on tasks without being explicitly programmed for every rule."
+      }
+    ]
+  }
+]
